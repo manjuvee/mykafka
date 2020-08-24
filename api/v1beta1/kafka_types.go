@@ -19,11 +19,11 @@ import (
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
-// KafkaSpec defines the desired state of KafkaBundle
-type KafkaSpec struct {
+// Spec defines the desired state of KafkaBundle
+type Spec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
-	Kafka          *KafkaBody      `json:"kafka"`
+	Kafka          *KafkaSpec      `json:"kafka"`
 	Zookeeper      *Zookeeper      `json:"zookeeper"`
 	EntityOperator *EntityOperator `json:"entityOperator"`
 	// Foo is an example field of Kafka. Edit Kafka_types.go to remove/update
@@ -36,7 +36,7 @@ type KafkaStatus struct {
 	// Important: Run "make" to regenerate code after modifying this file
 }
 
-type KafkaBody struct {
+type KafkaSpec struct {
 	Version   string     `json:"version"`
 	Replicas  int        `json:"replicas"`
 	Listeners *Listeners `json:"listeners"`
