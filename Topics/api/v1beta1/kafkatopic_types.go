@@ -50,9 +50,9 @@ type KafkaTopicStatus struct {
 
 // Metadata -
 type Metadata struct {
-	Name      string `json:"name"`
-	Labels    Labels `json:"labels"`
-	Namespace string `json:"namespace"`
+	Name      string  `json:"name"`
+	Labels    *Labels `json:"labels"`
+	Namespace string  `json:"namespace"`
 }
 
 // Labels -
