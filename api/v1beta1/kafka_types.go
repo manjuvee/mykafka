@@ -48,14 +48,14 @@ type Listeners struct {
 	Type     string `json:"type"`
 	Username string `json:"username"`
 	Plain    Plain  `json:"plain"`
-	TLS      TLS    `json:"tls"`
+	Tls      Tls    `json:"tls"`
 }
 
 type Plain struct {
 	Authentiation Authentiation `json:"authentiation"`
 }
 
-type TLS struct {
+type Tls struct {
 	Authentiation Authentiation `json:"authentiation"`
 }
 
