@@ -27,7 +27,9 @@ type KafkaSpec struct {
 	Zookeeper      *Zookeeper      `json:"zookeeper"`
 	EntityOperator *EntityOperator `json:"entityOperator"`
 	// Foo is an example field of Kafka. Edit Kafka_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	// Foo is an example field of Kafka. Edit Kafka_types.go to remove/update
+	Foo    string `json:"foo,omitempty"`
+	Sample string `json:"sample,omitempty"`
 }
 
 // KafkaStatus defines the observed state of KafkaBundle
