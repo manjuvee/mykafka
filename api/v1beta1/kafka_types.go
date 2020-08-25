@@ -23,7 +23,7 @@ import (
 type KafkaSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
-	Kafka          *KafkaBody      `json:"kafka"`
+	Kafka          *KafkaBody      `json:"kafkaBody"`
 	Zookeeper      *Zookeeper      `json:"zookeeper"`
 	EntityOperator *EntityOperator `json:"entityOperator"`
 	// Foo is an example field of Kafka. Edit Kafka_types.go to remove/update
