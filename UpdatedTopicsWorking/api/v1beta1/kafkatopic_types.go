@@ -39,7 +39,7 @@ type KafkaTopicSpec struct {
 // Config is the Schema for the kafkatopics API
 type Config struct {
 	RetentionMs  int `json:"retention.ms"`
-	SegmentBytes int `json:"Segment.bytes"`
+	SegmentBytes int `json:"segment.bytes"`
 }
 
 // KafkaTopicStatus defines the observed state of KafkaTopic
