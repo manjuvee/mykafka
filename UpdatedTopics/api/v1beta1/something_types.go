@@ -23,8 +23,8 @@ import (
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
-// KafkaSpec defines the desired state of KafkaBundle
-type KafkaSpec struct {
+// SomethingSpec defines the desired state of KafkaBundle
+type SomethingSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 	Kafka          *Kafka          `json:"kafka"`
@@ -34,8 +34,8 @@ type KafkaSpec struct {
 	Foo string `json:"foo,omitempty"`
 }
 
-// KafkaStatus defines the observed state of KafkaBundle
-type KafkaStatus struct {
+// SomethingStatus defines the observed state of KafkaBundle
+type SomethingStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 }
@@ -110,8 +110,8 @@ type Something struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	Spec   KafkaSpec   `json:"spec,omitempty"`
-	Status KafkaStatus `json:"status,omitempty"`
+	Spec   SomethingSpec   `json:"spec,omitempty"`
+	Status SomethingStatus `json:"status,omitempty"`
 }
 
 // +kubebuilder:object:root=true
